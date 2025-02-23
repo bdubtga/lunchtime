@@ -1,52 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-</head>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-<style>
-    html,
-    body {
-        margin: 0;
-        padding: 0;
-    }
+        #mainBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+        }
 
-    #mainBox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        height: 100vh;
-        background-color: black;
-    }
+        #mainButton {
+            font-family: "Open Sans", serif;
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            background-color: #3f3f3f;
+            padding: 0.5em;
+            border-radius: 0.2em;
+        }
+    </style>
 
-    #mainButton {
-        font-family: "Open Sans", serif;
-        text-decoration: none;
-        color: white;
-        font-size: 2em;
-        background-color: #3f3f3f;
-        padding: 0.5em;
-        border-radius: 0.2em;
-    }
-</style>
+    <body>
+        <div id="mainBox">
+            <div style="text-align: center">
+                <img
+                    src="res/lwb.png"
+                    alt="Description of image"
+                    style="max-width: 100%; height: auto"
+                />
+                <br />
+                <a
+                    id="mainButton"
+                    href="https://en.wikipedia.org/wiki/Enumclaw_horse_sex_case"
+                    >More info</a
+                >
+                <!DOCTYPE html>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8" />
+                        <meta
+                            name="viewport"
+                            content="width=device-width, initial-scale=1.0"
+                        />
+                        <title>Document</title>
 
-<body>
-    <div id="mainBox">
-        <div style="text-align: center;">
-            <img src="res/lwb.png" alt="Description of image" style="max-width: 100%; height: auto;">
-            <br>
-            <a id="mainButton" href="https://en.wikipedia.org/wiki/Enumclaw_horse_sex_case">More info</a>
+                        <link
+                            rel="preconnect"
+                            href="https://fonts.googleapis.com"
+                        />
+                        <link
+                            rel="preconnect"
+                            href="https://fonts.gstatic.com"
+                            crossorigin
+                        />
+                        <link
+                            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+                            rel="stylesheet"
+                        />
+                    </head>
+
+                    <style>
+                        html,
+                        body {
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        #mainBox {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            width: 100vw;
+                            height: 100vh;
+                            background-color: black;
+                        }
+
+                        #mainButton {
+                            font-family: "Open Sans", serif;
+                            text-decoration: none;
+                            color: white;
+                            font-size: 2em;
+                            background-color: #3f3f3f;
+                            padding: 0.5em;
+                            border-radius: 0.2em;
+                        }
+                    </style>
+
+                    <body>
+                        <div id="mainBox">
+                            <div style="text-align: center">
+                                <img
+                                    src="res/lwb.png"
+                                    alt="Description of image"
+                                    style="max-width: 100%; height: auto"
+                                />
+                                <br />
+                                <a
+                                    id="mainButton"
+                                    href="https://en.wikipedia.org/wiki/Enumclaw_horse_sex_case"
+                                    >More info</a
+                                >
+                                <br />
+                                <stripe-buy-button
+                                    buy-button-id="buy_btn_1QvcxDGZTGo7JEpVTL2zOP5W"
+                                    publishable-key="pk_live_51ME7GXGZTGo7JEpVbhZhgpxh7qSl0ruKUJbuwBcFf1RjyPaA4oB3wCO9iMKPFl7WzAWLIU2mzAnh8ijVHj2dz1TK0040K4jPXf"
+                                >
+                                </stripe-buy-button>
+                            </div>
+                        </div>
+
+                        <script
+                            async
+                            src="https://js.stripe.com/v3/buy-button.js"
+                        ></script>
+                    </body>
+                </html>
+            </div>
         </div>
-    </div>
-</body>
-
+    </body>
 </html>
