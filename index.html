@@ -5,137 +5,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
 
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
             rel="stylesheet"
         />
+        <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     </head>
 
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-        }
-
-        #mainBox {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100vw;
-            height: 100vh;
-            background-color: black;
-        }
-
-        #mainButton {
-            font-family: "Open Sans", serif;
-            text-decoration: none;
-            color: white;
-            font-size: 2em;
-            background-color: #3f3f3f;
-            padding: 0.5em;
-            border-radius: 0.2em;
-        }
-    </style>
-
-    <body>
-        <div id="mainBox">
-            <div style="text-align: center">
-                <img
-                    src="res/lwb.png"
-                    alt="Description of image"
-                    style="max-width: 100%; height: auto"
-                />
-                <br />
-                <a
-                    id="mainButton"
-                    href="https://en.wikipedia.org/wiki/Enumclaw_horse_sex_case"
-                    >More info</a
-                >
-                <!DOCTYPE html>
-                <html lang="en">
-                    <head>
-                        <meta charset="UTF-8" />
-                        <meta
-                            name="viewport"
-                            content="width=device-width, initial-scale=1.0"
-                        />
-                        <title>Document</title>
-
-                        <link
-                            rel="preconnect"
-                            href="https://fonts.googleapis.com"
-                        />
-                        <link
-                            rel="preconnect"
-                            href="https://fonts.gstatic.com"
-                            crossorigin
-                        />
-                        <link
-                            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-                            rel="stylesheet"
-                        />
-                    </head>
-
-                    <style>
-                        html,
-                        body {
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        #mainBox {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 100vw;
-                            height: 100vh;
-                            background-color: black;
-                        }
-
-                        #mainButton {
-                            font-family: "Open Sans", serif;
-                            text-decoration: none;
-                            color: white;
-                            font-size: 2em;
-                            background-color: #3f3f3f;
-                            padding: 0.5em;
-                            border-radius: 0.2em;
-                        }
-                    </style>
-
-                    <body>
-                        <div id="mainBox">
-                            <div style="text-align: center">
-                                <img
-                                    src="res/lwb.png"
-                                    alt="Description of image"
-                                    style="max-width: 100%; height: auto"
-                                />
-                                <br />
-                                <a
-                                    id="mainButton"
-                                    href="https://en.wikipedia.org/wiki/Enumclaw_horse_sex_case"
-                                    >More info</a
-                                >
-                                <br />
-                                <stripe-buy-button
-                                    buy-button-id="buy_btn_1QvcxDGZTGo7JEpVTL2zOP5W"
-                                    publishable-key="pk_live_51ME7GXGZTGo7JEpVbhZhgpxh7qSl0ruKUJbuwBcFf1RjyPaA4oB3wCO9iMKPFl7WzAWLIU2mzAnh8ijVHj2dz1TK0040K4jPXf"
-                                >
-                                </stripe-buy-button>
-                            </div>
-                        </div>
-
-                        <script
-                            async
-                            src="https://js.stripe.com/v3/buy-button.js"
-                        ></script>
-                    </body>
-                </html>
-            </div>
+    <body
+        class="md:p-16 flex flex-col md:flex-row w-screen h-screen items-center justify-center bg-black text-white gap-0 md:gap-16"
+    >
+        <div class="flex flex-col px-8 md:px-0">
+            <img
+                src="res/lwb.png"
+                alt="Description of image"
+                class="max-w-full h-auto"
+            />
+            <br />
+            <a
+                id="mainButton"
+                href="https://en.wikipedia.org/wiki/Enumclaw_horse_sex_case"
+                class="font-sans no-underline text-white text-lg bg-[#0074D4] p-2 rounded mb-4 text-center"
+                >More info</a
+            >
         </div>
+
+        <div class="flex items-center justify-center">
+            <stripe-buy-button
+                buy-button-id="buy_btn_1QvcxDGZTGo7JEpVTL2zOP5W"
+                publishable-key="pk_live_51ME7GXGZTGo7JEpVbhZhgpxh7qSl0ruKUJbuwBcFf1RjyPaA4oB3wCO9iMKPFl7WzAWLIU2mzAnh8ijVHj2dz1TK0040K4jPXf"
+                class="mt-4"
+            ></stripe-buy-button>
+        </div>
+
+        <script async src="https://js.stripe.com/v3/buy-button.js"></script>
     </body>
 </html>
